@@ -1,6 +1,24 @@
 # Register/login form created with React and Firebase
 
-**Description is below screenshots**
+**Screenshots can be found at the bottom of the README**
+
+## Description
+
+This is mock-project to practice interraction with Firebase. App can register new account, login and logout. Account route is protected. Form displays a notification if the password or email is incorrect
+
+## Features
+
+- React
+- Firebase
+- Context
+- Tailwind
+- React router
+
+## Deploy
+
+https://fir-auth-test-6131b.web.app/signup
+
+---
 
 ## Screenshots
 
@@ -23,19 +41,3 @@
 ***Registration error***
 ---
 ![Registration error](https://user-images.githubusercontent.com/65069586/197623375-c07673b5-9dfc-47fa-9230-796752410856.png)
-
-## Description
-
-This is mock-project to practice interraction with Firebase. App can register new account, login and logout. Account route is protected. Form displays a notification if the password or email is incorrect
-
-## Features
-
-- React
-- Firebase
-- Context
-- Tailwind
-- React router
-
-## Deploy
-
-https://fir-auth-test-6131b.web.app/signup

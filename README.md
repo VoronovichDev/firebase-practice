@@ -9,7 +9,7 @@ This is mock-project to practice interraction with Firebase. App can register ne
 ### Test app
 Follow the [link](https://fir-auth-test-6131b.web.app/signup), create an account or use an existing one:
 
-Email: test@test.co,
+Email: test@test.com,
 Pass: password
 
 ## Features

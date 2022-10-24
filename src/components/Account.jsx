@@ -1,10 +1,12 @@
 import React from 'react';
+import { UserAuth } from '../context/AuthContext';
 
 const Account = () => {
+  const { user } = UserAuth();
   return (
     <div className="max-w-[600px] mx-auto my-16 p-4 ">
       <h1 className="text-2xl font-bold py-4 text-center">
-        Hello, emailAddress! Welcome to your profile
+        Hello, {user && user.email}! Welcome to your profile
       </h1>
       <div className="bg-blue-500 p-4 h-64 text-white flex flex-col justify-between">
         <ul className="h-[50%] flex flex-col justify-between">

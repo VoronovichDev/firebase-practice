@@ -6,6 +6,12 @@
 
 This is mock-project to practice interraction with Firebase. App can register new account, login and logout. Account route is protected. Form displays a notification if the password or email is incorrect
 
+### Test app
+Follow the [link](https://fir-auth-test-6131b.web.app/signup), create an account or use an existing one:
+
+Email: test@test.co,
+Pass: password
+
 ## Features
 
 - React

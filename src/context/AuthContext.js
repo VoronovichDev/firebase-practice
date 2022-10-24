@@ -11,8 +11,13 @@ const UserContext = createContext();
 
 export const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState({});
+
   const createUser = (email, password) => {
     return createUserWithEmailAndPassword(auth, email, password);
+  };
+
+  const logout = () => {
+    return signOut(auth);
   };
 
   useEffect(() => {
@@ -25,7 +30,9 @@ export const AuthContextProvider = ({ children }) => {
     };
   }, []);
 
-  return <UserContext.Provider value={{ createUser, user }}>{children}</UserContext.Provider>;
+  return (
+    <UserContext.Provider value={{ createUser, user, logout }}>{children}</UserContext.Provider>
+  );
 };
 
 export const UserAuth = () => {

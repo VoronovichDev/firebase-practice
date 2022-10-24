@@ -1,8 +1,19 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { UserAuth } from '../context/AuthContext';
 
 const Account = () => {
-  const { user } = UserAuth();
+  const navigate = useNavigate();
+  const { user, logout } = UserAuth();
+  const handleLogout = async () => {
+    try {
+      await logout();
+      navigate('/');
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
   return (
     <div className="max-w-[600px] mx-auto my-16 p-4 ">
       <h1 className="text-2xl font-bold py-4 text-center">
@@ -16,7 +27,9 @@ const Account = () => {
         </ul>
         <h3 className="self-end cursor-pointer">Other private stuff</h3>
       </div>
-      <button className="border px-6 py-2 my-4">Log out</button>
+      <button onClick={handleLogout} className="border px-6 py-2 my-4">
+        Log out
+      </button>
     </div>
   );
 };
